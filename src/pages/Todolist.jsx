@@ -102,7 +102,6 @@ function Todolist() {
           
              return updateData 
         });
-        checkData()
 
 
         // console.log(check)
