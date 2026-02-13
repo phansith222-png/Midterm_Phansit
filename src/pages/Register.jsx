@@ -23,10 +23,12 @@ function Register() {
         if(!result.success) {
             const{fieldErrors} = result.error.flatten()
             setError(fieldErrors)
+            return
         }
         try {
             const res = await axios.post(`https://drive-accessible-pictures-send.trycloudflare.com/auth/register`,formdata)
-            console.log(res.data)
+            console.log("Register successfully",res.data)
+            navigate("/todolist")
         } catch (error) {
             
         }
