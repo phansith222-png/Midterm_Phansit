@@ -27,12 +27,11 @@ function Login() {
     }
     return (
         <div >
-            <form className='flex flex-col' onSubmit={hdlSubmit}>
-                <label >Username</label>
-                <input onChange={hdlChange} name='username' className='border' type="text" /><br />
-                <label >Password</label>
-                <input onChange={hdlChange} name='password' className='border' type="text" /><br />
-                <button>Submit</button>
+            <form className='flex flex-col px-15 py-10 bg-gray-600 rounded-2xl' onSubmit={hdlSubmit}>
+                <h1 className='text-[40px] text-white'>Welcome</h1><br />
+                <input onChange={hdlChange}  name='username' className='border-none px-3 py-1 rounded-md bg-gray-400 text-white' type="text" placeholder='username' /><br />
+                <input onChange={hdlChange} name='password' className='border-none px-3 py-1 rounded-md bg-gray-400 text-white' type="text" placeholder='password' /><br />
+                <button className='text-white border-none bg-gray-400 border rounded-md cursor-pointer py-2'>Login</button>
             </form>
         </div>
     )

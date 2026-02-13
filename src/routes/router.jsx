@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Todolist from "../pages/Todolist";
-import Tokenprofile from "../pages/Tokenprofile";
 
 
 const router = createBrowserRouter([
@@ -19,9 +18,6 @@ const router = createBrowserRouter([
         },{
             path:"/todolist",
             element:<Todolist/>
-        },{
-            path:"/tokenprofile",
-            element:<Tokenprofile/>
         }
     ]
     }
